@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Put every input field you want to recieve data from inbetween the FORM tags-->
+    <!-- The form sends the data to "index.php" defined in the action attribute -->
+    <!-- The method attribute specifies if its a GET or POST-->
+    <!-- POST is used for confidential data (passwords) and GET is used for insensitive data-->
+    <!-- If you're sending large ammounts of data use the ENCTYPE attribute, and set it to "multipart/form-data"-->
+
+    <form action="index.php" method="get" enctype="multipart/form-data">
+
+        <!-- The label tag is used to specifie(for the user) what the input does-->
+        <!-- The for attribute(label) helps visually impaired people if the use a screen reader-->
+        <!-- You should connect the label and the input with the same for(label)/id(input) attribute name-->
+        <!-- This will put the label and input next to eachother, if you click on the label the cursor will jump to the input field-->
+
+        <!--TEXT-->
+        <label for="username">username:</label>
+        <input type="text" id="username" placeholder="Levi-24" minlength="3" maxlength="20">
+        <br>
+        <!-- The required attribute means you can't submit the form without filling in the input-->
+        <!-- With the placeholder attribute you can give the user an example of the required input-->
+        <!-- The min/maxlength attribute sets the minimum/maximum length of the text-->
+
+        <!--PASSWORD-->
+        <label for="password">password:</label>
+        <input type="password" id="password" placeholder="Key_123" minlength="5"><br>
+
+        <!--E-MAIL-->
+        <label for="email">e-mail:</label>
+        <input type="email" id="email" placeholder="Levi24@gmail.com"><br>
+
+        <!--TELEPHONE-->
+        <label for="phone">phone:</label>
+        <input type="tel" id="phone" placeholder="30-123-4567" pattern="[0-9]{2}-[0-9]{3}-[0-9]{4}"><br>
+        <!-- The pattern attribute can be used to specify the format the input field should be filled in-->
+        <!-- [the square bracket contains the usable characters or numbers] and the {braces define how many should be used}-->
+        <!-- Example: [A-Za-z]{3} three upper or lowercase letters, [0-9]{2} two numbers between zero and nine-->
+        <!-- More complex patterns can be found on W3Schools (www.w3schools.com/tags/att_input_pattern.asp)-->
+
+        <!--DATE-->
+        <label for="date">date:</label>
+        <input type="date" id="date"><br>
+
+        <!--NUMBER-->
+        <label for="quantity">quantity:</label>
+        <input type="number" min="0" max="99" value="1"><br>
+        <!-- The min attribute defines the lowest value you can set and the max defines the highest-->
+        <!-- The value attribute sets the default value-->
+
+        <!--RADIO BUTTONS-->
+        <label for="title">title:</label>
+
+        <label for="mr">Mr.</label>
+        <input type="radio" id="mr" value="Mr." name="title">
+
+        <label for="ms">Ms.</label>
+        <input type="radio" id="ms" value="Ms." name="title">
+
+        <label for="dr">Dr.</label>
+        <input type="radio" id="dr" value="Dr." name="title"><br>
+        <!-- Define the value of the radio buttons, it is the data that's saved when the form is submitted-->
+        <!-- Buttons with the same name attribute can only be selected individually, buttons with the same name attribute can be selected at the same time-->
+
+        <!--DROPDOWN-->
+        <label for="payment">payment:</label>
+        <select id="payment">
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Giftcard">Giftcard</option>
+        </select><br>
+        <!-- Use the select tag not the input tag-->
+        <!-- Define the value of option tags, it is the data that's saved when the form is submitted-->
+
+        <!--CHECKBOX-->
+        <label for="subscribe">subscribe:</label>
+        <input type="checkbox" id="subscribe"><br>
+
+        <!--TEXT AREA-->
+        <label for="comment">comment:</label>
+        <textarea id="comment" cols="30" rows="3"></textarea><br>
+        <!-- For comments use the textarea tag not the input tag-->
+        <!-- You can define the ammount of rows and collumns of the textbox with the ROWS and COLS attributes-->
+
+        <!--FILE SUBMISSION-->
+        <label for="file">file:</label>
+        <input type="file" id="file" accept="image/png, image/jpeg"><br>
+        <!-- With the accept attribute you can define teh accepted file formats-->
+        <!-- You can add more accepted file formats seperated by commas-->
+
+        <!--RESET BUTTON-->
+        <input type="reset">
+        <!-- The reset type input gives you a button to reset teh form to its original state-->
+
+        <!--SUBMIT BUTTON-->
+        <input type="submit">
+        <!-- The submit type input gives you a button to submit your form-->
+
+    </form>
+
+</body>
+</html>
