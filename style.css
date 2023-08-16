@@ -1,0 +1,41 @@
+@font-face {
+    font-family: FontName;
+    src: url(Fonts/FontName.ttf);
+}
+/*To add a downloaded font you have to give it a name with the font family attribute, and link its source with the src attribute*/
+
+body{
+    background-color: bisque;
+    margin: 10px;
+}
+
+h1{
+    color: blue;
+    font-family: Roboto, verdana, Arial;
+}
+/*You can add custom fonts by adding its google fonts link in the head html element*/
+/*You can add more fonts in the font family attribute for fallbacks*/
+
+h2{
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+h3{
+    border-bottom: 3px dotted blue;
+    border-top: 3px solid yellow;
+    border-left: 3px solid red;
+    border-right: 3px dotted green;
+}
+
+h4{
+    text-shadow: 5px 3px 3px purple, -5px -3px 3px brown;
+}
+/*Shadow attributes have 4 minor atributes, in order: Horizontal offset, vertical offset, Blur, Color*/
+
+#box1{
+    width: 300px;
+    height: 50px;
+    background-color: antiquewhite;
+    box-shadow: 3px 3px 5px gray;
+}
