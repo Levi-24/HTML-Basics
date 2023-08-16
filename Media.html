@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FAVICON-->
+    <link rel="icon" href="Images/Cat-Favicon.png" type="image/png">
+    <!-- You should specify the relation attribute to be icon-->
+    <!-- The type should be the same as your file format-->
+    <!-- You have to add your relative file location to the href attribute-->
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--IMAGES-->
+    <img src="https://i.pinimg.com/564x/33/de/3e/33de3ec45b6c14085cd250a342c45cf0.jpg" alt="Cute dog" width="300px">
+    <!-- Use the src attribute to select a picture to display-->
+    <!-- The alt attribute is used when the picture doesn't load in or people use a screen reader-->
+    <!-- You can adjust the size of the picture with the width or height attribute, they can be used at the same time but if you only use one the other will be adjusted automatically-->
+    <!-- The img tag is compatible with many file types such as GIF, PNG, JPG, Etc.-->
+    <img src="Images/golden-retriever-spinning.gif" alt="Cute dog spinnig" height="400px">
+    <!-- You can define a relative file path to your picture-->
+    
+    <!--VIDEOS-->
+    <video width="500px" controls autoplay muted loop>
+        <source src="Video/Waterfall-Stream-Leolo212.mp4" type="video/mp4">
+        <source src="Video/Waterfall-Stream-Leolo212.webm" type="video/webm">
+        Your browser does not support the video element.
+        <!--Video by Leolo212 on Pixabay-->
+    </video>
+    <!-- The video tag should have at least the controls attribute if you want to be able to control your video-->
+    <!-- Additional attributes are autoplay, muted, loop-->
+    <!-- You can add fallback options, these will automatically replace the first file if it isn't compatible(file format) with the browser-->
+    <!-- You can add a last resort text which will shoe up if none of the file formats are supported by the browser-->
+
+    <!--AUDIO-->
+    <audio controls>
+        <source src="Audio/Cyberpunk2077-Never-Fade-Away.mp3">
+        <source src="Audio/Cyberpunk2077-Never-Fade-Away.wav">
+        Your browser does not support the audio element.
+        <!--Music by Refused(band) copyright:Cyberpunk2077-->
+    </audio>
+    <!-- The audio tag should have at least the controls attribute if you want to be able to control your audio-->
+    <!-- Additional attributes are autoplay, muted, loop-->
+    <!-- You can add fallback options, these will automatically replace the first file if it isn't compatible(file format) with the browser-->
+    <!-- You can add a last resort text which will shoe up if none of the file formats are supported by the browser-->
+
+    <!--BUTTONS-->
+
+</body>
+</html>
